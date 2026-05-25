@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/psychai-favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PsychAI: The unified AI-powered mental health support network bridging Patient View App and Clinician View App." />
+    <title>PsychAI — Modern Mental Health Ecosystem</title>
+    
+    <!-- Premium Fonts matching both web apps -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Animated Gradient Mesh Background (Matching the web apps) -->
+    <div class="bg-gradient-mesh-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <img src="/logo.png" alt="PsychAI" class="logo-icon" />
+          <span class="logo-text">Psych<span>AI</span></span>
+        </a>
+        
+        <!-- Consumer navigation links -->
+        <nav class="nav-links">
+          <a href="#intro-video">Ecosystem Video</a>
+          <a href="#portal-hub">Our Applications</a>
+          <a href="#why-psychai">Why PsychAI</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#security">Privacy & Trust</a>
+        </nav>
+
+        <div class="nav-actions">
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+      
+      <!-- Hero Section with Mockup Previews -->
+      <section class="hero-section">
+        <div class="container hero-grid-layout">
+          
+          <!-- Hero Left: Description & CTAs -->
+          <div class="hero-left-content">
+            <div class="badge-container">
+              <span class="hero-badge">A Unified Clinical Ecosystem</span>
+            </div>
+            <h1 class="hero-title">
+              Therapy and <br/>
+              Self-Care, in <br/>
+              <span class="gradient-text">Perfect Sync.</span>
+            </h1>
+            <p class="hero-subtitle">
+              PsychAI links daily patient self-reflection, somatic grounding logs, and Groq-powered counseling chat with automated crisis warnings and digest analytics for psychologists.
+            </p>
+            
+            <!-- Download & Launch Buttons -->
+            <div class="hero-cta-group">
+              <div class="hero-links-row">
+                <a href="#portal-hub" class="btn btn-primary">Launch View Apps</a>
+                <a href="#security" class="btn btn-secondary">Privacy Standards</a>
+              </div>
+              
+              <!-- Custom Vector App Badges -->
+              <div class="download-badges-row">
+                <!-- App Store -->
+                <a href="#" class="app-store-badge btn-trigger-fun">
+                  <svg class="badge-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.57 2.95-1.39z"/>
+                  </svg>
+                  <div class="badge-text">
+                    <span class="badge-sub">Download on the</span>
+                    <span class="badge-main">App Store</span>
+                  </div>
+                </a>
+                
+                <!-- Google Play -->
+                <a href="#" class="app-store-badge btn-trigger-fun">
+                  <svg class="badge-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M5.25 3.03a1.5 1.5 0 0 0-.43 1.05v15.84a1.5 1.5 0 0 0 .43 1.05l9.28-9.28-9.28-9.28zm10.7 9.28L6.67 3.03a1.5 1.5 0 0 0-1.42 0l8.77 8.77c.28-.28.28-.74 0-1.02l1.93-1.93zm.57-.57l-1.93 1.93 1.93 1.93c1.07-.62 1.43-1.96.81-3.03a2.15 2.15 0 0 0-.81-.83z"/>
+                  </svg>
+                  <div class="badge-text">
+                    <span class="badge-sub">GET IT ON</span>
+                    <span class="badge-main">Google Play</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- How is your mind today? (Interactive Widget with Custom Vector Emojis) -->
+            <div class="mood-check-widget">
+              <h5>How is your mind today?</h5>
+              <div class="mood-emojis-row">
+                <button class="btn-mood-emoji" data-mood="1" aria-label="Sad">
+                  <svg class="mood-icon-svg color-sad" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+                    <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                    <path d="M8 16.5C9 15.2 10.5 14.8 12 14.8C13.5 14.8 15 15.2 16 16.5" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M9 11.5C8.6 12 8.6 13 9 13.5C9.4 13 9.4 12 9 11.5Z" fill="#38bdf8" stroke="none"/>
+                  </svg>
+                </button>
+                <button class="btn-mood-emoji" data-mood="2" aria-label="Stressed">
+                  <svg class="mood-icon-svg color-stressed" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+                    <circle cx="8.5" cy="11" r="1" fill="currentColor"/>
+                    <circle cx="15.5" cy="11" r="1" fill="currentColor"/>
+                    <path d="M6.5 9L9.5 10" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17.5 9L14.5 10" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M9 15.5H15" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <button class="btn-mood-emoji" data-mood="3" aria-label="Neutral">
+                  <svg class="mood-icon-svg color-neutral" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+                    <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                    <path d="M9 15H15" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <button class="btn-mood-emoji" data-mood="4" aria-label="Happy">
+                  <svg class="mood-icon-svg color-happy" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+                    <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                    <path d="M8.5 14C9.5 15.8 11.2 16.5 12 16.5C12.8 16.5 14.5 15.8 15.5 14" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <button class="btn-mood-emoji" data-mood="5" aria-label="Excited">
+                  <svg class="mood-icon-svg color-excited" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+                    <path d="M7 11.5L8.5 10L7 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 11.5L15.5 10L17 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 14C8 16.5 10 17.5 12 17.5C14 17.5 16 16.5 16 14H8Z" fill="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="mood-response-box" id="mood-response">
+                Select an emoji above to check in with PsychAI.
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- Hero Right: Interactive Dashboard Previews -->
+          <div class="hero-right-graphics">
+            <div class="graphics-wrapper">
+              
+              <!-- Floating Card 1: Chat Mockup (Patient App) -->
+              <div class="floating-preview-card chat-preview float-1">
+                <div class="preview-card-header">
+                  <div class="avatar bg-teal">AI</div>
+                  <div>
+                    <h5>Support Companion</h5>
+                    <p class="status-online"><span class="dot-online"></span> Always Available</p>
+                  </div>
+                </div>
+                <div class="preview-chat-body">
+                  <div class="chat-bubble ai">
+                    Let's take a slow breath. What is triggering your stress right now?
+                  </div>
+                  <div class="chat-bubble user">
+                    Just feeling overwhelmed with work sessions.
+                  </div>
+                  <div class="chat-bubble ai">
+                    I hear you. Remember, you don't have to carry it all today.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Card 2: Interactive Breathing Pacer (Patient App Demo) -->
+              <div class="floating-preview-card pacer-preview float-2">
+                <h5>Grounding Pacer</h5>
+                <p class="pacer-desc">Simulated mindfulness tool</p>
+                <div class="pacer-demo-circle-container">
+                  <div class="pacer-outer-glow"></div>
+                  <div class="pacer-breathe-bubble"></div>
+                  <span class="pacer-breathe-text">Breathe</span>
+                </div>
+              </div>
+
+              <!-- Floating Card 3: Mood Analytics Chart Mockup (Clinician App) -->
+              <div class="floating-preview-card chart-preview float-3">
+                <div class="preview-card-header no-border">
+                  <div>
+                    <h5>Weekly Outcome Progress</h5>
+                    <p class="chart-subtitle">Client: Shreya Mullu</p>
+                  </div>
+                  <div class="chart-value">+24%</div>
+                </div>
+                <div class="preview-chart-container">
+                  <!-- Sparkline SVG graph representing recovery trend -->
+                  <svg class="outcome-sparkline" viewBox="0 0 100 30">
+                    <defs>
+                      <linearGradient id="gradient-sparkline" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="var(--color-psych)" stop-opacity="0.3"></stop>
+                        <stop offset="100%" stop-color="var(--color-psych)" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path class="sparkline-bg-fill" d="M0 30 L0 25 Q15 15 30 20 T60 8 T90 4 L100 2 L100 30 Z" fill="url(#gradient-sparkline)"></path>
+                    <path class="sparkline-path" d="M0 25 Q15 15 30 20 T60 8 T90 4 L100 2" fill="none" stroke="var(--color-psych)" stroke-width="2" stroke-linecap="round"></path>
+                    <circle cx="100" cy="2" r="2.5" fill="var(--color-psych)" class="sparkline-endpoint"></circle>
+                  </svg>
+                  <div class="chart-labels">
+                    <span>Mon</span>
+                    <span>Wed</span>
+                    <span>Fri</span>
+                    <span>Sun</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Introduction Walkthrough Demo Video Section -->
+      <section class="video-intro-section" id="intro-video">
+        <div class="container video-grid-layout">
+          <!-- Left: Information & Stats -->
+          <div class="video-intro-text">
+            <div class="badge-container">
+              <span class="hero-badge">Ecosystem Walkthrough</span>
+            </div>
+            <h2 class="section-title">See How PsychAI Bridges Care</h2>
+            <p class="video-desc">
+              Experience the real-time syncing capabilities of PsychAI. When patients log reflections and grounding activities, outcomes are instantly plotted on the clinician dashboard for professional therapists to review.
+            </p>
+            
+            <div class="stats-mini-grid">
+              <div class="stat-mini-card">
+                <h3>99.9%</h3>
+                <p>Uptime Sync</p>
+              </div>
+              <div class="stat-mini-card">
+                <h3>&lt; 50ms</h3>
+                <p>Inference Speed</p>
+              </div>
+              <div class="stat-mini-card">
+                <h3>100%</h3>
+                <p>Data Isolation</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right: Interactive Video Player Box -->
+          <div class="video-player-outer">
+            <div class="video-player-container" id="mock-video-player">
+              
+              <!-- Video Placeholder Overlay (Thumbnail) -->
+              <div class="video-thumbnail-overlay" id="video-thumbnail">
+                <div class="thumbnail-abstract-bg">
+                  <!-- Abstract vectors representing the apps -->
+                  <div class="abstract-ring ring-1"></div>
+                  <div class="abstract-ring ring-2"></div>
+                  <div class="abstract-mesh-grid"></div>
+                </div>
+                
+                <button class="play-button-circle" id="btn-play-video" aria-label="Play Demo Video">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon-svg">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+                <span class="play-duration">Play Demo (0:30)</span>
+              </div>
+              
+              <!-- Animated Video Player Content (Active Simulation) -->
+              <div class="video-playing-simulation">
+                <!-- Header Status -->
+                <div class="sim-header">
+                  <span class="sim-pill">Ecosystem Walkthrough</span>
+                  <div class="sim-time" id="sim-timer">00:00</div>
+                </div>
+                
+                <!-- Inside Screen: Displays Chat & Chart animations -->
+                <div class="sim-screen">
+                  
+                  <!-- Left side: Patient Companion view -->
+                  <div class="sim-sub-screen patient-sim">
+                    <h6>Patient Chat Screen</h6>
+                    <div class="sim-chat-area" id="sim-chat-log">
+                      <!-- Chat bubbles will animate here -->
+                    </div>
+                  </div>
+                  
+                  <!-- Right side: Clinician Board view -->
+                  <div class="sim-sub-screen clinician-sim">
+                    <h6>Clinician Dashboard</h6>
+                    <div class="sim-chart-area">
+                      <div class="sim-bar-graph">
+                        <div class="sim-bar" id="sim-bar-1" style="height: 30%"></div>
+                        <div class="sim-bar" id="sim-bar-2" style="height: 50%"></div>
+                        <div class="sim-bar" id="sim-bar-3" style="height: 45%"></div>
+                        <div class="sim-bar" id="sim-bar-4" style="height: 70%"></div>
+                        <div class="sim-bar" id="sim-bar-5" style="height: 85%"></div>
+                      </div>
+                      <p class="sim-chart-label">Anxiety Score Decline</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <!-- Bottom controls -->
+                <div class="sim-controls">
+                  <button class="sim-control-btn" id="btn-pause-sim" aria-label="Pause Walkthrough">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="ctrl-icon" id="pause-icon">
+                      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                  </button>
+                  <button class="sim-control-btn" id="btn-mute-sim" aria-label="Mute Audio">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="ctrl-icon" id="mute-icon">
+                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                  </button>
+                  <div class="sim-seekbar-bg">
+                    <div class="sim-seekbar-fill" id="sim-seekbar-fill" style="width: 0%"></div>
+                  </div>
+                  <button class="sim-control-btn btn-trigger-fun" id="btn-like-sim" aria-label="Love this">
+                    ❤️
+                  </button>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portal Selection Hub -->
+      <section id="portal-hub" class="portal-hub-section">
+        <div class="container">
+          <h2 class="section-title text-center">Enter Web Workspaces</h2>
+          <p class="section-subtitle text-center">Launch either interface directly below. Our backend automatically synchronizes inputs via secure database endpoints.</p>
+          
+          <div class="portals-grid">
+            <!-- Patient App Card -->
+            <div class="portal-card card-patient" id="patient-card">
+              <div class="portal-card-glow"></div>
+              <div class="portal-icon-top">
+                <img src="/patient-icon.png" alt="Patient" class="portal-icon-img" />
+              </div>
+              <div class="portal-header">
+                <div class="portal-title-block">
+                  <span class="portal-tag tag-patient">PATIENT SYSTEM</span>
+                  <h3 class="portal-name">Patient View App</h3>
+                </div>
+              </div>
+              <p class="portal-description">
+                Your supportive pocket wellness companion. Log daily emotions, engage with empathetic AI guides, complete grounding breath sessions, and share reflections securely with your therapist.
+              </p>
+              
+              <ul class="portal-features-list">
+                <li>
+                  <span class="bullet-check color-patient">✓</span>
+                  <span><strong>AI Support Partner:</strong> Warm, empathetic chat guided by Groq.</span>
+                </li>
+                <li>
+                  <span class="bullet-check color-patient">✓</span>
+                  <span><strong>Guided Journals:</strong> Write down logs and track recurring mood triggers.</span>
+                </li>
+                <li>
+                  <span class="bullet-check color-patient">✓</span>
+                  <span><strong>Somatic Pacer:</strong> Breathing timers designed to ground you during panic.</span>
+                </li>
+                <li>
+                  <span class="bullet-check color-patient">✓</span>
+                  <span><strong>Direct Connect:</strong> Secure messaging linked to your psychologist's desk.</span>
+                </li>
+              </ul>
+
+              <div class="portal-action-zone">
+                <div class="server-status" id="patient-status">
+                  <span class="status-dot offline"></span>
+                  <span class="status-text">Checking workspace status...</span>
+                </div>
+<a href="https://psychai-patient-app.vercel.app/" target="_blank" class="btn-portal btn-patient btn-trigger-fun" id="patient-link">
+                  Launch Patient View App
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Breathe Connector -->
+            <div class="breathe-connector" aria-hidden="true">
+              <div class="breathe-ring breathe-ring-outer"></div>
+              <div class="breathe-ring breathe-ring-mid"></div>
+              <div class="breathe-ring breathe-ring-inner"></div>
+              <div class="breathe-core">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="breathe-icon">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                  <path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Clinician App Card -->
+            <div class="portal-card card-clinician" id="clinician-card">
+              <div class="portal-card-glow"></div>
+              <div class="portal-icon-top">
+                <img src="/clinician-icon.png" alt="Clinician" class="portal-icon-img" />
+              </div>
+              <div class="portal-header">
+                <div class="portal-title-block">
+                  <span class="portal-tag tag-clinician">CLINICIAN SYSTEM</span>
+                  <h3 class="portal-name">Clinician View App</h3>
+                </div>
+              </div>
+              <p class="portal-description">
+                Your metrics analytics desk. View patient clinical graphs, read auto-summarized AI session briefs, coordinate schedules, and receive safety alert indicators.
+              </p>
+              
+              <ul class="portal-features-list">
+                <li>
+                  <span class="bullet-check color-clinician">✓</span>
+                  <span><strong>Outcome Tracking:</strong> Chart daily wellness progress and triggers.</span>
+                </li>
+                <li>
+                  <span class="bullet-check color-clinician">✓</span>
+                  <span><strong>Safety Warnings:</strong> ML-driven warnings flag severe crisis indices.</span>
+                </li>
+                <li>
+                  <span class="bullet-check color-clinician">✓</span>
+                  <span><strong>AI Session Briefs:</strong> Read summarized records of weekly client self-journals.</span>
+                </li>
+                <li>
+                  <span class="bullet-check color-clinician">✓</span>
+                  <span><strong>Session Manager:</strong> Manage intakes, private logs, and chats.</span>
+                </li>
+              </ul>
+
+              <div class="portal-action-zone">
+                <div class="server-status" id="clinician-status">
+                  <span class="status-dot offline"></span>
+                  <span class="status-text">Checking workspace status...</span>
+                </div>
+<a href="https://psychai-clinician-app.vercel.app/" target="_blank" class="btn-portal btn-clinician btn-trigger-fun" id="clinician-link">
+                  Launch Clinician View App
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why PsychAI Section -->
+      <section id="why-psychai" class="features-section">
+        <div class="container">
+          <h2 class="section-title text-center">Intelligent, Unified Wellness Care</h2>
+          <p class="section-subtitle text-center">We utilize technology to support patient reflection and therapeutic outcome mapping.</p>
+          
+          <div class="features-grid">
+            <div class="feature-detail-card">
+              <div class="feature-detail-header">
+                <div class="feature-detail-icon bg-teal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <h4>Zero-Latency Support</h4>
+              </div>
+              <p>Whenever feelings scale, patients get immediate supportive counseling responses from an LLM. Power-matched with Groq's high-speed inference, helping ground patients instantly.</p>
+            </div>
+
+            <div class="feature-detail-card">
+              <div class="feature-detail-header">
+                <div class="feature-detail-icon bg-violet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </div>
+                <h4>Proactive Safety Warnings</h4>
+              </div>
+              <p>The system constantly flags high-risk patterns or crisis sentiment indicators in logs. Psychologists get instant safety alerts, prioritizing critical interventions.</p>
+            </div>
+
+            <div class="feature-detail-card">
+              <div class="feature-detail-header">
+                <div class="feature-detail-icon bg-blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                </div>
+                <h4>Intelligent Self-Journals</h4>
+              </div>
+              <p>Structured diary prompts guide clients in writing down thoughts. AI evaluates overall sentiment patterns, mapping wellness trajectories in the client's file.</p>
+            </div>
+
+            <div class="feature-detail-card">
+              <div class="feature-detail-header">
+                <div class="feature-detail-icon bg-purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18"></path>
+                  </svg>
+                </div>
+                <h4>Automated Prep Digests</h4>
+              </div>
+              <p>Before every session, psychologists review brief, auto-summarized records of self-care entries, capturing progress and points of stress in seconds.</p>
+            </div>
+
+            <div class="feature-detail-card">
+              <div class="feature-detail-header">
+                <div class="feature-detail-icon bg-emerald">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <h4>Mindfulness Integration</h4>
+              </div>
+              <p>Clients use custom breathing pacers and grounding timers. Completed exercises populate progress metrics, reinforcing clinical strategies.</p>
+            </div>
+
+            <div class="feature-detail-card">
+              <div class="feature-detail-header">
+                <div class="feature-detail-icon bg-orange">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                  </svg>
+                </div>
+                <h4>Integrated Check-Ins</h4>
+              </div>
+              <p>Real-time encrypted patient-therapist messaging coordinates scheduling, adjustments, and virtual clinic consultations under one roof.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust, Privacy and Security Highlight -->
+      <section id="security" class="security-section">
+        <div class="container">
+          <div class="security-card">
+            <div class="security-badge-block">
+              <div class="shield-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="security-tag">CLINICAL PRIVACY</span>
+            </div>
+            <h3 class="security-title">Secure, HIPAA-Compliant Architecture</h3>
+            <p class="security-text">
+              Your mental health logs are highly personal, which is why we enforce security protocols. All logs (journals, chat diaries, assessments) are synchronized using Row-Level Security via a secure Supabase cloud network.
+            </p>
+            <div class="security-features-row">
+              <div class="sec-item">
+                <h5>End-to-End Encryption</h5>
+                <p>Data is encrypted both in transit and at rest, securing client files.</p>
+              </div>
+              <div class="sec-item">
+                <h5>Identity Isolation</h5>
+                <p>Therapist and patient records operate on strictly separated profiles.</p>
+              </div>
+              <div class="sec-item">
+                <h5>Compliance Checked</h5>
+                <p>Designed around standard therapeutic privacy boundaries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="testimonials-section">
+        <div class="container">
+          <h2 class="section-title text-center">Trusted by Patients & Therapists</h2>
+          <p class="section-subtitle text-center">See how PsychAI enhances daily mental health tracking and therapeutic outcomes.</p>
+          
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "PsychAI has changed how I manage my anxiety between clinical visits. Tracking my triggers and breathing is simple, and my psychologist already has a summary of my logs before I walk in."
+              </p>
+              <div class="testimonial-user">
+                <div class="user-avatar bg-teal">SM</div>
+                <div class="user-info">
+                  <h5>Shreya Mullu</h5>
+                  <p>Patient User</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "The clinical summaries are incredibly valuable. I can scan my client's weekly mood logs and journals in seconds, highlighting core issues immediately during our face-to-face sessions."
+              </p>
+              <div class="testimonial-user">
+                <div class="user-avatar bg-purple">DC</div>
+                <div class="user-info">
+                  <h5>Dr. Dev Chaudhary</h5>
+                  <p>Clinical Psychologist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connection check modal -->
+      <div class="custom-modal" id="offline-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-card">
+          <div class="modal-header-block">
+            <div class="modal-badge warning">CONNECTION ASSISTANT</div>
+            <h4 class="modal-title">Unable to Connect</h4>
+          </div>
+          <p class="modal-text">
+            We couldn't connect to the local server of <strong id="modal-app-name">App</strong> at the default address (<span id="modal-app-port">http://localhost:3000</span>).
+          </p>
+          <p class="modal-text-secondary">
+            Please make sure that the local application server is currently running. Start the dev server in the corresponding app folder to activate the web portal connection.
+          </p>
+          <div class="modal-actions-bar">
+            <button class="btn btn-secondary" id="modal-close">Close</button>
+            <a href="#" target="_blank" class="btn btn-primary" id="modal-proceed">Proceed Anyway</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" style="margin-bottom: 8px;">
+              <img src="/logo.png" alt="PsychAI" class="logo-icon" />
+              <span class="logo-text">Psych<span>AI</span></span>
+            </a>
+            <p class="footer-tagline">Connecting hearts and insights through supportive technology.</p>
+          </div>
+          <div class="footer-disclaimer">
+            <p><strong>Disclaimer:</strong> PsychAI is a mental wellness platform designed to aid self-reflection and coordinate professional therapeutic insights. It is not a medical diagnostic tool or a replacement for clinical crisis services. If you are experiencing an immediate crisis, please contact your local emergency services or a mental health helpline.</p>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <p class="footer-copy">&copy; 2026 PsychAI Mental Health Ecosystem. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Module JS -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
