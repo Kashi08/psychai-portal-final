@@ -411,7 +411,7 @@ function speakText(text, sender) {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
       utterance.rate = 0.88;
-      // Both speakers female — AI slightly brighter, patient slightly warmer
+      // Both speakers female   AI slightly brighter, patient slightly warmer
       utterance.pitch = sender === 'ai' ? 1.15 : 1.0;
       if (cachedFemaleVoice) utterance.voice = cachedFemaleVoice;
       window.speechSynthesis.speak(utterance);
